@@ -252,3 +252,24 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+
+
+############################################################################
+##    RAUL STEPS DEFINITIONS
+############################################################################
+
+#Given I check the following ratings: G, PG, R
+
+Given /^(?:|I )check the followings ratings: "([^"]*)"$/ do |field|
+  check(field)
+end
+
+
+
+
+
+
+
+
+
